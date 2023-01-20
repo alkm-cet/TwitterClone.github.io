@@ -66,8 +66,6 @@ function LeftBar({ username }) {
 
       </div>
 
-
-
       <div className="leftbarbottom">
 
         <img style={{ width: 50, height: 50, borderRadius: 50 }} src="https://picsum.photos/200" alt="" />
@@ -78,7 +76,7 @@ function LeftBar({ username }) {
             <small>@{username}</small>
           </span>
 
-          <a href="#" onClick={exit} style={{textDecoration:'none',color:'black'}}>Çıkış Yap</a>
+          <a href="#" onClick={exit} style={{ textDecoration: 'none', color: 'black' }}>Çıkış Yap</a>
 
         </div>
 

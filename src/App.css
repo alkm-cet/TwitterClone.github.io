@@ -301,7 +301,7 @@
   background-color: aliceblue;
 }
 
-.headercontainerh3{
+.headercontainerh3 {
   font: bold 20px arial;
 }
 
@@ -324,6 +324,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid black; */
 }
 
 .photocontainer {
@@ -351,7 +352,7 @@
 }
 
 .twitInput {
-  width: 99%;
+  width: 95%;
   min-height: 30px;
   height: auto;
   border: none;
@@ -450,6 +451,10 @@
   cursor: pointer;
 }
 
+.liked {
+  color: red;
+}
+
 
 /* ---------------------------------RIGHTBAR------------------------------- */
 
@@ -477,7 +482,7 @@
   background-image: url('https://static.thenounproject.com/png/3134345-200.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: rgb(247,249,249);
+  background-color: rgb(247, 249, 249);
 }
 
 /* --------------------------------docket */
@@ -490,7 +495,7 @@
   padding: 10px 10px;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: rgb(247,249,249);
+  background-color: rgb(247, 249, 249);
 
   display: flex;
   flex-direction: column;
@@ -512,11 +517,11 @@
   gap: 5px;
 }
 
-.docketcomponentsbaslik{
+.docketcomponentsbaslik {
   color: black;
 }
 
-.docketcomponentsh6{
+.docketcomponentsh6 {
   font-size: 12px;
 }
 
@@ -533,7 +538,7 @@
   width: 90%;
   height: 40%;
   /* border: 1px solid lightgray; */
-  background-color: rgb(247,249,249);
+  background-color: rgb(247, 249, 249);
 
   display: flex;
   flex-direction: column;
@@ -563,10 +568,6 @@
   border-radius: 50px;
   transition-duration: .3s;
   border: none;
-}
-
-.wotofollowbtn:hover {
   cursor: pointer;
-  background-color: rgb(33, 43, 53);
 }
 

@@ -10,7 +10,7 @@ function Register({ username, setUsername, password, setPassword }) {
         setPassword(e.target.value)
     }
 
-    console.log(localStorage.getItem('isim'), localStorage.getItem('parola'))
+    // console.log(localStorage.getItem('isim'), localStorage.getItem('parola'))
 
     const register = (e) => {
 

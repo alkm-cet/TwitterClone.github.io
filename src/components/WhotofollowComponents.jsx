@@ -1,6 +1,21 @@
 import React from 'react'
 
 function WhotofollowComponents({ img, mahlas, email }) {
+
+    const follow = (e) => {
+        if (e.target.innerText == 'Takip Et') {
+            e.target.innerText = 'Takip Ediliyor';
+            e.target.style.backgroundColor = 'rgb(29, 155, 240)'
+            e.target.style.width = '90px'
+        }
+        else if (e.target.innerText == 'Takip Ediliyor') {
+            e.target.innerText = 'Takip Et';
+            e.target.style.backgroundColor = 'black'
+            e.target.style.width = '80px'
+        }
+
+    }
+
     return (
         <div className='whotofollowComponents'>
             <div className='wotofollnamediv'>
@@ -12,7 +27,7 @@ function WhotofollowComponents({ img, mahlas, email }) {
             </div>
 
 
-            <button className='wotofollowbtn'>Takip Et</button>
+            <button className='wotofollowbtn' onClick={follow}>Takip Et</button>
         </div>
     )
 }

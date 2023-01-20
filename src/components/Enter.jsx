@@ -17,6 +17,10 @@ function Enter({ username, setUsername, password, setPassword }) {
     setEnteredPassword(e.target.value)
   }
 
+  const showpassword = (e) => {
+    e.target.nextSibling.style.display = 'block'
+  }
+
 
   const giris = (e) => {
     let isim = localStorage.getItem('isim');
@@ -44,8 +48,8 @@ function Enter({ username, setUsername, password, setPassword }) {
       </div>
 
       <button className='registeriler' onClick={giris}>Giriş Yap</button>
-      <button className='registerşifreunuttum'>Şifreni mi unuttun?</button>
-
+      <button className='registerşifreunuttum' onClick={showpassword}>Şifreni mi unuttun?</button>
+      <p className='entersifren' style={{ display: 'none' }}>Şifren: {password}</p>
     </div>
   )
 }

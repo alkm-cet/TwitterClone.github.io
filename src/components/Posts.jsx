@@ -1,6 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-function Posts({ itemArray, username}) {
+
+function Posts({ itemArray, username }) {
+
+    const handleclik = (e) => {
+        e.target.classList.toggle('liked');
+    }
+
+    const deletetweet = (e) => {
+        e.target.parentElement.parentElement.style.display = 'none';
+    }
 
     return (
         <div >
@@ -30,12 +39,16 @@ function Posts({ itemArray, username}) {
                                     cycle
                                 </span>
 
-                                <span className="material-symbols-outlined">
+                                <span className="material-symbols-outlined" onClick={handleclik}>
                                     favorite
                                 </span>
 
                                 <span className="material-symbols-outlined">
                                     equalizer
+                                </span>
+
+                                <span class="material-symbols-outlined" onClick={deletetweet}>
+                                    delete
                                 </span>
                             </div>
 

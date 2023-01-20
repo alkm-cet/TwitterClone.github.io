@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
-import Posts from './Posts';
+import React, { useEffect } from 'react'
 
 function Twit({ addedItem, setAddedItem, itemArray, setItemArray }) {
 
@@ -13,15 +12,15 @@ function Twit({ addedItem, setAddedItem, itemArray, setItemArray }) {
             e.preventDefault();
         } else {
             const items = {
-                key: Math.floor(Math.random() * 10000) ,
+                key: Math.floor(Math.random() * 10000),
                 value: addedItem
             };
             e.target.style.opacity = "1"
             setItemArray(oldItems => [items, ...oldItems]);
             setAddedItem("");
         }
-
     }
+
     return (
         <div className='twitcontainer'>
 
@@ -30,7 +29,7 @@ function Twit({ addedItem, setAddedItem, itemArray, setItemArray }) {
             </div>
 
             <div className="twitleftcontainer">
-                <input maxLength={280} className='twitInput' type="text" placeholder='Neler oluyor?' onChange={handleOnChange} value={addedItem} />
+                <input maxLength={280} className='twitInput' type="text" placeholder='Neler oluyor?' onChange={handleOnChange} value={addedItem}/>
 
                 <div className="araclar">
                     <div className="araclarleft">
